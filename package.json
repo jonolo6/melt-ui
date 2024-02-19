@@ -6,11 +6,11 @@
 	"author": "Thomas G. Lopes",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build && npm run package",
+		"build": "vite build && pnpm run package",
 		"deploy": "vite build",
 		"preview": "vite preview",
 		"package": "svelte-kit sync && svelte-package && publint",
-		"prepublishOnly": "npm run package",
+		"prepublishOnly": "pnpm run package",
 		"test": "vitest",
 		"test:coverage": "vitest run --coverage",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
